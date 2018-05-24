@@ -76,5 +76,5 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 * Thanks to the October community.
-* @axly For help with passing PHP variables to JS files.
+* @alxy For help with passing PHP variables to JS files.
 * It was brought to my attention that RainLab has a [Location Plugin](https://github.com/rainlab/location-plugin) that offers very similar features and may even be better as far as extensibility goes.
