@@ -1,0 +1,62 @@
+<?php if ($this->previewMode): ?>
+
+    <div class="form-control">
+        <?= $value ?>
+    </div>
+
+<?php else: ?>
+
+    <input
+        id="<?= $this->getId('input') ?>" 
+        name="<?= $name ?>" 
+        placeholder="Enter your address"
+        onFocus="geolocate()" 
+        type="text"
+        class="form-control"
+        value="<?= $value ?>"></input>
+
+    <table id="address">
+        <tr>   
+            <td class="label">Place ID</td>
+            <td class="wideField" colspan="3"><input class="field" id="place_id"
+                disabled="true" class="form-control"></input></td>
+        </tr>
+        <tr>
+          <td class="label">Street address</td>
+          <td class="slimField"><input class="field" id="street_number"
+                disabled="true" class="form-control"></input></td>
+          <td class="wideField" colspan="2"><input class="field" id="route"
+                disabled="true" class="form-control"></input></td>
+        </tr>
+        <tr>
+          <td class="label">City</td>
+          <!-- Note: Selection of address components in this example is typical.
+               You may need to adjust it for the locations relevant to your app. See
+               https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+          -->
+          <td class="wideField" colspan="3"><input class="field" id="locality"
+                disabled="true" class="form-control"></input></td>
+        </tr>
+        <tr>
+          <td class="label">State</td>
+          <td class="slimField"><input class="field"
+                id="administrative_area_level_1" disabled="true" class="form-control"></input></td>
+          <td class="label">Zip code</td>
+          <td class="wideField"><input class="field" id="postal_code"
+                disabled="true"></input></td>
+        </tr>
+        <tr>
+          <td class="label">Country</td>
+          <td class="wideField" colspan="3"><input class="field"
+                id="country" disabled="true" class="form-control"></input></td>
+        </tr>
+      </table>
+
+<?php endif ?>
+<script>
+    // Inject field id into googleplaces.js
+    var fieldId = "<?= $fieldId ?>";
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCEEQWmjat4dZoYXpY9zBg4w3zLD91Sfo&libraries=places&callback=initAutocomplete"
+        async defer></script>
