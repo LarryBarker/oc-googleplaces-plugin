@@ -12,13 +12,13 @@ Download from the October Marketplace or clone the [respository](https://develop
 
 Simply install the plugin from the market place or clone the repository as mentioned in the Getting Started section.
 
-You can then access the FormWidget in your model's fields.yaml file by including \LmbDev\GooglePlaces\FormWidgets\GooglePlaces as the field type.
+You can then access the FormWidget in your model's fields.yaml file by including \LMBdev\GooglePlaces\FormWidgets\GooglePlaces as the field type.
 
 ```
 googleplace:
     span: auto
     label: 'Google Place'
-    type: \LmbDev\GooglePlaces\FormWidgets\GooglePlaces
+    type: \LMBdev\GooglePlaces\FormWidgets\GooglePlaces
     modelClass: \Author\Plugins\Models\ModelName
     selectFrom: googleplace
     pattern: text

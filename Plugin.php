@@ -1,4 +1,4 @@
-<?php namespace LmbDev\GooglePlaces;
+<?php namespace LMBdev\GooglePlaces;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -53,7 +53,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'LmbDev\GooglePlaces\Components\MyComponent' => 'myComponent',
+            'LMBdev\GooglePlaces\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -67,7 +67,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'LmbDev.googleplaces.some_permission' => [
+            'LMBdev.googleplaces.some_permission' => [
                 'tab' => 'GooglePlaces',
                 'label' => 'Some permission'
             ],
@@ -86,9 +86,9 @@ class Plugin extends PluginBase
         return [
             'googleplaces' => [
                 'label'       => 'GooglePlaces',
-                'url'         => Backend::url('LmbDev/googleplaces/mycontroller'),
+                'url'         => Backend::url('LMBdev/googleplaces/mycontroller'),
                 'icon'        => 'icon-keyboard-o',
-                'permissions' => ['LmbDev.googleplaces.*'],
+                'permissions' => ['LMBdev.googleplaces.*'],
                 'order'       => 500,
             ],
         ];
