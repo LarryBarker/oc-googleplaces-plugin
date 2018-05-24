@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'GooglePlaces',
             'description' => 'Adds Google Places AutoComplete form widget to backend.',
-            'author'      => 'LmbDev',
+            'author'      => 'LMBdev',
             'icon'        => 'icon-keyboard-o'
         ];
     }
