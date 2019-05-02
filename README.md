@@ -58,7 +58,7 @@ If you wish to store these values in your model's form, you should add the respe
 
 ## Contributing
 
-Please feel free to (message me)[mailto:lbarker@wwrfresource.com] with comments, questions, or concerns. You can also submit a pull request to the respository.
+Please feel free to make comments, questions, or concerns. You can also submit a pull request to the respository.
 
 ## Versioning
 
@@ -66,7 +66,7 @@ I use use [Github](http://github.com/) for versioning.
 
 ## Authors
 
-* **Larry Barker** - *Initial work* - [LMBDEV](https://larrybarker.netlify.com)
+* **Larry Barker** [Larry Barker](https://larrybarker.netlify.com)
 
 
 ## License
